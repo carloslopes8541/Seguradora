@@ -1,0 +1,24 @@
+<h2>Cliente</h2> 
+
+<hr/>
+<div *ngIf="cliente">
+  <div>
+    <label><b>Nome Cliente:</b></label> {{cliente.nome}}
+  </div>
+  <div>
+    <label><b>CPF:</b></label> {{cliente.cpf}}
+  </div>
+  <div>
+    <label><b>Cidade:</b></label> {{cliente.cidade}}
+  </div>
+    <div>
+    <label><b>Uf:</b></label> {{cliente.uf}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="listar()" class="btn btn-primary">Voltar Lista Cliente</button><br>
+
+
+

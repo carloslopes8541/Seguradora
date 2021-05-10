@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Lista Apolices</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>numeroApolice</th>
+            <th>inicioContrato</th>
+            <th>fimContrato</th>
+            <th>placaVeiculo</th>
+            <th>valorApolice</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let apolice of apolices | async">
+            <td>{{apolice.numeroApolice}}</td>
+            <td>{{apolice.inicioContrato}}</td>
+            <td>{{apolice.fimContrato}}</td>
+            <td>{{apolice.placaVeiculo}}</td>
+            <td>{{apolice.valorApolice}}</td>
+            <td><button (click)="deleteApolice(apolice.numeroApolice)" class="btn btn-danger">Deletar</button>
+              <button (click)="updateApolice(apolice.numeroApolice)" class="btn btn-info" style="margin-left: 10px">Atualizar</button>
+                <button (click)="apoliceDetails(apolice.numeroApolice)" class="btn btn-info" style="margin-left: 10px">Visualizar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

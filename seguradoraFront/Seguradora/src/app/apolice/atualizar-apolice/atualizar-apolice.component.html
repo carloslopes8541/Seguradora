@@ -1,0 +1,32 @@
+<h3>Atualizar Apolice</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group"  style="margin-top: 20px;">
+      <label for="name">Numero Apolice</label>
+      <input type="text" class="form-control" id="numeroApolice" required [(ngModel)]="apolice.numeroApolice" name="numeroApolice"  disabled="true" >
+    </div>
+
+    <div class="form-group"  style="margin-top: 20px;">
+      <label for="name">Inicio Contrato</label>
+      <input type="text" class="form-control" id="inicioContrato" required [(ngModel)]="apolice.inicioContrato" name="inicioContrato">
+    </div>
+
+    <div class="form-group"  style="margin-top: 20px;">
+      <label for="name">Fim Contrato</label>
+      <input type="text" class="form-control" id="fimContrato" required [(ngModel)]="apolice.fimContrato" name="fimContrato">
+    </div>
+
+    <div class="form-group"  style="margin-top: 20px;">
+      <label for="name">Placa Veiculo</label>
+      <input type="text" class="form-control" id="placaVeiculo" required [(ngModel)]="apolice.placaVeiculo" name="placaVeiculo">
+    </div>
+
+    <div class="form-group"  style="margin-top: 20px;">
+        <label for="name">Valor Apolice</label>
+        <input type="text" class="form-control" id="valorApolice" required [(ngModel)]="apolice.valorApolice" name="valorApolice">
+      </div >
+
+    <button  style="margin-top: 20px;" type="submit" class="btn btn-success">Salvar</button>
+  </form>
+</div>
+

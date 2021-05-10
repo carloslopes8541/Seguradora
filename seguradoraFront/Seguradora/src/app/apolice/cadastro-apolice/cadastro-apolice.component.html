@@ -1,0 +1,32 @@
+<h3>Cadastrar Apolice</h3>
+<div [hidden]="submitted" style="width: 600px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group" style="margin-top: 20px;">
+      <label for="name">Inicio Contrato</label>
+      <input type="text" class="form-control" id="inicioContrato" required [(ngModel)]="apolice.inicioContrato" name="inicioContrato">
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label for="name">Fim Contrato</label>
+      <input type="text" class="form-control" id="fimContrato" required [(ngModel)]="apolice.fimContrato" name="fimContrato">
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;" >
+      <label for="name">Placa Veiculo</label>
+      <input type="text" class="form-control" id="placaVeiculo" required [(ngModel)]="apolice.placaVeiculo" name="placaVeiculo">
+    </div>
+
+    <div class="form-group" style="margin-top: 20px;">
+        <label for="name">Valor Apolice</label>
+        <input type="text" class="form-control" id="valorApolice" required [(ngModel)]="apolice.valorApolice" name="valorApolice">
+      </div>
+    <div>
+    <button type="submit" class="btn btn-success" style="margin-top: 20px;"
+    >Salvar</button>
+  </div>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn btn-success" (click)="save">Salvar</button> 
+</div>

@@ -1,0 +1,26 @@
+<h2>Apolice</h2> 
+
+<hr/>
+<div *ngIf="apolice">
+  <div>
+    <label><b>Numero Apolice:</b></label> {{apolice.numeroApolice}}
+  </div>
+  <div>
+    <label><b>Inicio Contrato:</b></label> {{apolice.inicioContrato}}
+  </div>
+  <div>
+    <label><b>Fim Contrato:</b></label> {{apolice.fimContrato}}
+  </div>
+    <div>
+    <label><b>Placa Veiculo:</b></label> {{apolice.placaVeiculo}}
+  </div>
+  <div>
+    <label><b>Valor Apolice:</b></label> {{apolice.valorApolice}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="listar()" class="btn btn-primary">Voltar Lista Apolice</button><br>
+
+

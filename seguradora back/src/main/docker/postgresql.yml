@@ -1,0 +1,10 @@
+version: '2'
+services:
+  madre-postgresql:
+    image: postgres:12.3
+    environment:
+      - POSTGRES_USER=seguradora
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
